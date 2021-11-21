@@ -1,13 +1,11 @@
 import React, { useState } from 'react'
-import { Route, Link, Routes, useMatch } from 'react-router-dom'
-import Assign2 from './Assign2';
-// import { Outlet } from 'react-router-dom';
+import { Link, Routes} from 'react-router-dom'
+
 
 
 export default function Assign1(props) {
     
     const [sem, setsem] = useState("choosesem");
-    const [display, setdisplay] = useState("display");
     const semester = (event) => {
         setsem(event.target.value)
     };
@@ -29,8 +27,8 @@ export default function Assign1(props) {
                     </div>
                 </div>
                 <div className="container mx-5 my-5">
-                    <h2 className={sem==="choosesem"?display:"none"}>No Data Found</h2>
-                    <table className={`table ${sem!=="choosesem"?display:"none"}`}>
+                    <h2 className={sem==="choosesem"?"display":"none"}>No Data Found</h2>
+                    <table className={`table ${sem!=="choosesem"?"display":"none"}`}>
                         <thead>
                             <tr>
                                 <th>Sl. No</th>
