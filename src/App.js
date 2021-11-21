@@ -32,6 +32,14 @@ function App() {
       })
     }
   }
+  
+  const [Msg, setMsg] = useState("")
+
+  const message = (msg) =>{
+    setMsg(msg);
+  }
+
+
 
   return (
     <>
@@ -39,9 +47,9 @@ function App() {
         <Header toggleMode={toggleMode} mode={mode} Style={Style}/>
         <Navbar mode={mode} />
         <Routes>
-          <Route exact path="/assignment/*" element={<Assign1 Style={Style}/>}></Route>
+          <Route exact path="/assignment/*" element={<Assign1 Style={Style} message={message}/>}></Route>
           <Route exact path="/" element={<Spotlight Style={Style}/>}></Route>
-          <Route exact path="/assignment/Assign2" element={<Assign2 Style={Style}/> } ></Route>
+          <Route exact path="/assignment/Assign2" element={<Assign2 Style={Style} Msg={Msg}/> } ></Route>
         </Routes>
       </Router>
     </>

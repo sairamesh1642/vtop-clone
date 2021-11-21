@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 export default function Assign2(props) {
     return (
         <>
@@ -16,7 +17,7 @@ export default function Assign2(props) {
                             <th>Class Number</th>
                         </tr>
                         <tr>
-                            <td>Fall Semester 2021-22</td>
+                            <td>{props.Msg}</td>
                             <td>ITE1002</td>
                             <td>Web Technologies</td>
                             <td>ETH</td>
@@ -27,7 +28,7 @@ export default function Assign2(props) {
                 <br />
                 <br />
                 <br />
-                <table className="table">
+                <table class="table">
                     <tr>
                         <th rowSpan="2">Sl. No</th>
                         <th rowSpan="2">Title</th>
@@ -62,6 +63,8 @@ export default function Assign2(props) {
                         <td><i className="fas fa-pen"></i></td>
                     </tr>
                 </table>
+                <br /><br />
+                <button type="button" class="btn btn-dark"><Link to="/assignment" id="goback">Go Back</Link></button>
                 </div>
             </div>
         </>

@@ -285,6 +285,21 @@ td{
 th{
   text-align: center;
 }
+
+#goback{
+  text-decoration: none;
+  color: white;
+}
+.folder{
+  color: black;
+}
+
+.tablecenter{
+  text-align: center;
+  justify-content: center;
+  width: fit-content;
+}
+
 @media (max-width: 420px) {
   .sidebar.close .nav-links li .sub-menu{
     display: none;
