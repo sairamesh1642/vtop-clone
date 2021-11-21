@@ -3,10 +3,68 @@ import { Outlet } from 'react-router-dom'
 export default function Assign2(props) {
     return (
         <>
-            {/* <div style={props.Style} className="assign">
-                <img src="https://images.unsplash.com/photo-1637420989235-a84f81d3d077?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="" />
-            </div> */}
-            <img src="https://images.unsplash.com/photo-1637420989235-a84f81d3d077?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="" />
+            <div style={props.Style} className="assign">
+                <div className="container">
+                <h3 className="container my-3">Assignment Upload</h3>
+                <hr />
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Semester</th>
+                            <th>Course Code</th>
+                            <th>Course Title</th>
+                            <th>Course Type</th>
+                            <th>Class Number</th>
+                        </tr>
+                        <tr>
+                            <td>Fall Semester 2021-22</td>
+                            <td>ITE1002</td>
+                            <td>Web Technologies</td>
+                            <td>ETH</td>
+                            <td>VL2021220100575</td>
+                        </tr>
+                    </thead>
+                </table>
+                <br />
+                <br />
+                <br />
+                <table className="table">
+                    <tr>
+                        <th rowSpan="2">Sl. No</th>
+                        <th rowSpan="2">Title</th>
+                        <th rowSpan="2">Max. Mark</th>
+                        <th rowSpan="2">Weightage %</th>
+                        <th rowSpan="2">Due Date</th>
+                        <th rowSpan="2">QP</th>
+                        <th colSpan="2">Document Details</th>
+                    </tr>
+                    <tr>
+                        <th>Last Updated</th>
+                        <th>Upload/Edit/Download</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Digital Assigment 1</td>
+                        <td>10</td>
+                        <td>10</td>
+                        <td>03-Nov-2021</td>
+                        <td><i class="fas fa-download"></i></td>
+                        <td>03 Nov 2021 05:52 PM</td>
+                        <td><i class="fas fa-pen"></i></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Digital Assigment 2</td>
+                        <td>10</td>
+                        <td>10</td>
+                        <td>03-Nov-2021</td>
+                        <td><i className="fas fa-download"></i></td>
+                        <td>03 Nov 2021 05:52 PM</td>
+                        <td><i className="fas fa-pen"></i></td>
+                    </tr>
+                </table>
+                </div>
+            </div>
         </>
     )
 }
